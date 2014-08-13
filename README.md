@@ -36,7 +36,6 @@ Add `data-vide-bg` attribute with a path to the video and poster without extensi
     data-vide-bg="path/to/video" data-vide-options="loop: false, muted: false, position: 0% 0%">
 </div>
 ```
-
 Or you can initialize it with JS, in some situations it can be helpful, because Vide doesn't have mutation observers, they are on you own:
 ```js
 $("#myBlock1").vide("path/to/video");
@@ -44,11 +43,9 @@ $("#myBlock2").vide("path/to/video", {
 ...options...
 });
 ```
-
 Easy as hell.
 
 ## Options
-
 Below a complete list of options and matching default values:
 
 ```js
@@ -61,7 +58,6 @@ $("#yourElement").vide({
     position: "50% 50%" // Alignment
 });
 ```
-
 ## Methods
 
 Below a complete list of methods:
@@ -80,7 +76,6 @@ instance.resize();
 // Destroy plugin instance
 instance.destroy();
 ```
-
 ## Resizing
 
 Vide plugin resizes, if window resizes. If you will use something like https://github.com/cowboy/jquery-resize, it will resize automatically, when element will resize. Or simply use `resize()` method whenever you need.
